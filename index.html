@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Notizblock</title>
+  <link rel="icon" type="image/x-icon" href="./img/notepad.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./fonts.css" />
+  <script src="./script.js"></script>
+</head>
+
+<body onload="render()">
+  <div>
+    <header>
+      <img class="png-notepad" src="./img/notepad.png" alt="notepad" />
+      <b>Notizblock</b>
+    </header>
+    <div class="selection">
+      <div class="note-selection" onclick="render()">
+        <img class="note-icon" src="./img/lightbulb.png" alt="notepad" />
+        <a class="note-text" href="#">Notizen</a>
+      </div>
+      <div class="trash-selection" onclick="showTrash()">
+        <img class="trash-icon" src="./img/trash.png" alt="trash" />
+        <a class="trash-text" href="#">Papierkorb</a>
+      </div>
+    </div>
+    <div id="content">
+    </div>
+  </div>
+  <div class="notepad-container">
+    <div id="notes-post" class="notes-post notes-trash-post">
+    </div>
+  </div>
+</body>
+
+</html>
